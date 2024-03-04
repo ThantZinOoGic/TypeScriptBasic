@@ -139,3 +139,28 @@ let  postArr : Post[];
 postArr = [post];
 
 postCreatedAt(post);
+
+
+// Type Aliases
+
+type Rgb = [number, number, number];
+function getRandomColor () : Rgb {
+    let r = Math.floor(Math.random() * 255);
+    let g = Math.floor(Math.random() * 255);
+    let b = Math.floor(Math.random() * 255);
+
+    return [r, g, b];
+}
+
+let colorOne = getRandomColor();
+let colorTwo = getRandomColor();
+
+console.log(colorOne,colorTwo);
+
+type User = {name : string, score : number};
+
+function getUser(user : User) {
+    console.log(`${user.name} score is ${user.score}`);
+}
+
+getUser({name: "Kyaw Kyaw", score : 100});

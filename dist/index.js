@@ -80,3 +80,16 @@ const postCreatedAt = (post) => {
 let postArr;
 postArr = [post];
 postCreatedAt(post);
+function getRandomColor() {
+    let r = Math.floor(Math.random() * 255);
+    let g = Math.floor(Math.random() * 255);
+    let b = Math.floor(Math.random() * 255);
+    return [r, g, b];
+}
+let colorOne = getRandomColor();
+let colorTwo = getRandomColor();
+console.log(colorOne, colorTwo);
+function getUser(user) {
+    console.log(`${user.name} score is ${user.score}`);
+}
+getUser({ name: "Kyaw Kyaw", score: 100 });
