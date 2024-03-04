@@ -197,3 +197,25 @@ const idOne = swipId("HHI");
 const idTwo = swipId(12);
 
 console.log("id One is ", idOne, "id Two is ", idTwo);
+
+
+interface UserInterface {
+    type : "user";
+    name : string;
+}
+
+interface PersonInterface {
+    type : "person";
+    name : string;
+}
+
+function logDetail (value : UserInterface | PersonInterface) : void {
+    if (value.type == "user") {
+        console.log("this is user");
+    }
+    if(value.type === "person") {
+        console.log("this is person")
+    }
+}
+
+logDetail({type : "person", name : "Hello Predon"});

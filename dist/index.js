@@ -115,3 +115,12 @@ function swipId(id) {
 const idOne = swipId("HHI");
 const idTwo = swipId(12);
 console.log("id One is ", idOne, "id Two is ", idTwo);
+function logDetail(value) {
+    if (value.type == "user") {
+        console.log("this is user");
+    }
+    if (value.type === "person") {
+        console.log("this is person");
+    }
+}
+logDetail({ type: "person", name: "Hello Predon" });
