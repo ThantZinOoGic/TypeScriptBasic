@@ -24,3 +24,22 @@ let personObj = {
     age: 12
 };
 console.log(personObj.name);
+//function
+function add(a, b) {
+    return a + b;
+}
+const sub = (a, b) => a - b;
+const addArr = (items) => {
+    return items.reduce((a, b) => a + b);
+};
+const greet = (name) => {
+    console.log(`Hello ${name}`);
+};
+function test(a, b) {
+    return 10;
+}
+test("hi", "there");
+greet("Ag Ag");
+console.log("add Number", add(1, 2));
+console.log("sub Number", sub(2, 1));
+console.log("Array Add", addArr([1, 2, 3, 4, 5]));
