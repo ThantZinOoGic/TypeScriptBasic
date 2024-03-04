@@ -63,3 +63,20 @@ const useCoords = () => {
 };
 const [lat, long] = useCoords();
 console.log("lat - ", lat, "long - ", long);
+;
+let authorOne = {
+    name: "hello",
+    title: "Book One",
+};
+let post = {
+    title: "Post One",
+    body: "This is body",
+    author: authorOne,
+    createAt: new Date()
+};
+const postCreatedAt = (post) => {
+    console.log(post.createAt, "author is ", post.author.name);
+};
+let postArr;
+postArr = [post];
+postCreatedAt(post);

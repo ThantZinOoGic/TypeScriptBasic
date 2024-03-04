@@ -103,3 +103,39 @@ const [lat, long] = useCoords();
 
 console.log("lat - ", lat, "long - ", long);
 
+
+// interface 
+
+interface Author {
+    name : string,
+    title : string
+};
+
+let authorOne : Author = {
+    name : "hello",
+    title : "Book One",
+}
+
+interface Post {
+    title : string,
+    body : string,
+    author : Author,
+    createAt : Date
+}
+
+let post : Post = {
+    title : "Post One",
+    body : "This is body",
+    author : authorOne,
+    createAt : new Date()
+}
+
+const postCreatedAt = (post : Post) => {
+    console.log(post.createAt, "author is ", post.author.name);
+} 
+
+
+let  postArr : Post[];
+postArr = [post];
+
+postCreatedAt(post);
