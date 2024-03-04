@@ -86,3 +86,20 @@ let func = (a : any) :any => {
 anyArr.push({id: 1});
 console.log(anyArr);
 
+
+//tuple
+
+let personT : [string, number, boolean]= ["mg mg", 12, true];
+let hsla : [number, string, string, number];
+hsla = [200, "100%", "50%", 1];
+
+const useCoords = () : [number, number] => {
+    let lat = 100;
+    let long = 30;
+    return [lat, long];
+}
+
+const [lat, long] = useCoords();
+
+console.log("lat - ", lat, "long - ", long);
+
