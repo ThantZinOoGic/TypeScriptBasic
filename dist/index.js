@@ -98,8 +98,20 @@ let id;
 id = 1;
 id = "asdfd";
 let someId = "as23ad";
+// function swipId (id : Id) : Id {
+//     id = id;
+//     return "Hello";
+// }
+// console.log(swipId(11));
+// type guards
 function swipId(id) {
-    id = id;
-    return "Hello";
+    if (typeof id === "string") {
+        return id + "hello";
+    }
+    else {
+        return id + 12;
+    }
 }
-console.log(swipId(11));
+const idOne = swipId("HHI");
+const idTwo = swipId(12);
+console.log("id One is ", idOne, "id Two is ", idTwo);
