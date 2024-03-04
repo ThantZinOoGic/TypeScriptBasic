@@ -164,3 +164,21 @@ function getUser(user : User) {
 }
 
 getUser({name: "Kyaw Kyaw", score : 100});
+
+
+// union type
+
+let id : number | string ;
+id = 1;
+id = "asdfd";
+
+type Id = number | string;
+
+let someId : Id = "as23ad";
+
+function swipId (id : Id) : Id {
+    id = id;
+    return "Hello";
+}
+
+console.log(swipId(11));

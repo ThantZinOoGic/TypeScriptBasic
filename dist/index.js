@@ -93,3 +93,13 @@ function getUser(user) {
     console.log(`${user.name} score is ${user.score}`);
 }
 getUser({ name: "Kyaw Kyaw", score: 100 });
+// union type
+let id;
+id = 1;
+id = "asdfd";
+let someId = "as23ad";
+function swipId(id) {
+    id = id;
+    return "Hello";
+}
+console.log(swipId(11));
