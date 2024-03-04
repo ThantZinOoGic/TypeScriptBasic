@@ -70,3 +70,19 @@ greet("Ag Ag");
 console.log("add Number", add(1, 2));
 console.log("sub Number", sub(2, 1));
 console.log("Array Add", addArr([1, 2, 3, 4, 5]));
+
+
+//any
+
+let a : any;
+let title;
+
+let anyArr :any[] = [1, "hello"];
+
+let func = (a : any) :any => {
+    return a + a;
+}
+
+anyArr.push({id: 1});
+console.log(anyArr);
+
